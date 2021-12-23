@@ -7,4 +7,4 @@ Cвёрстано c применением Flex, Grid, семантично, с 
 Применены списки, grid, адаптация к различным разрешениям.
 Свёрстано с макета Figma.
 
-Ссылка на Github: https://cam4567.github.io/russian-travel/index
+Ссылка на Github: https://cam4567.github.io/russian-travel/index.html
