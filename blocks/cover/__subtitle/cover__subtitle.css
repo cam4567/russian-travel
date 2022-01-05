@@ -4,10 +4,8 @@
   line-height: 1.22;
   font-style: normal;
   font-weight: 400;
-  color: #FFFFFF;
   margin: 0 auto;
   text-align: center;
-  z-index: 3;  
 }
 
 @media screen and (max-width: 767px) {

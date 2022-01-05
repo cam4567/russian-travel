@@ -10,7 +10,7 @@
     <header class="header">
       <img class="header__logo" src="./images/header-logo.svg" alt="Логотип Россия">
       <ul class="header__lang-list">
-        <li class="header__lang-item"><a class="header__lang-link header__lang-link_ru" href="#">Ru</a></li>
+        <li class="header__lang-item"><a class="header__lang-link header__lang-link_active" href="#">Ru</a></li>
         <li class="header__lang-item"><a class="header__lang-link" href="#">En</a></li>
       </ul>    
     </header>    
@@ -41,45 +41,19 @@
           <li>Аэропортов <span class="intro__list-num">241</span></li>
         </ul>   
       </section>
-      <section class="photo-grid">
-        <ul class="photo-grid__list">
-          <li class="photo-grid__item">
-            <img class="photo-grid__image" src="./images/photo-grid-train.jpg" alt="Фото из окна поезда">
-          </li>
-          <li class="photo-grid__item">
-            <img  class="photo-grid__image" src="./images/photo-grid-atharva-tulsi.jpg" alt="Фото Заснеженные горы">
-          </li>
-          <li class="photo-grid__item">
-            <img class="photo-grid__image" src="./images/photo-grid-tuman.jpg" alt="Фото поля с собакой">
-          </li>
-          <li class="photo-grid__item">
-            <img class="photo-grid__image" src="./images/photo-grid-sochi.jpg" alt="Фото туманный лес">
-          </li>
-          <li class="photo-grid__item">
-            <img class="photo-grid__image" src="./images/photo-grid-arisa.jpg" alt="Фото льды Байкала">
-          </li>
-          <li class="photo-grid__item">
-            <img class="photo-grid__image" src="./images/photo-grid-baikal.jpg" alt="Фото берега">
-          </li>
-          <li class="photo-grid__item">
-            <img class="photo-grid__image" src="./images/photo-grid-elbrus.jpg" alt="Фото горы Эльбрус">
-          </li>
-          <li class="photo-grid__item">
-            <img class="photo-grid__image" src="./images/photo-grid-kondratiev.jpg" alt="Фото Пешеходный знак">
-          </li>
-          <li class="photo-grid__item">
-            <img class="photo-grid__image" src="./images/photo-grid-kamchatka-1.jpg" alt="Фото Камчатка">
-          </li>
-          <li class="photo-grid__item">
-            <img class="photo-grid__image" src="./images/photo-grid-kamchatka-2.jpg" alt="Фото Камчатка горы">
-          </li>
-          <li class="photo-grid__item">
-            <img class="photo-grid__image" src="./images/photo-grid-baikal-2.jpg" alt="Фото скалы Байкал">
-          </li>
-          <li class="photo-grid__item">
-            <img class="photo-grid__image" src="./images/photo-grid-ergaki.jpg" alt="Фото туман в горах">
-          </li>
-        </ul>
+      <section class="photo-grid">        
+        <img class="photo-grid__image" src="./images/photo-grid-train.jpg" alt="Фото из окна поезда">
+        <img class="photo-grid__image" src="./images/photo-grid-atharva-tulsi.jpg" alt="Фото Заснеженные горы">
+        <img class="photo-grid__image" src="./images/photo-grid-tuman.jpg" alt="Фото поля с собакой">
+        <img class="photo-grid__image" src="./images/photo-grid-sochi.jpg" alt="Фото туманный лес">
+        <img class="photo-grid__image" src="./images/photo-grid-arisa.jpg" alt="Фото льды Байкала">
+        <img class="photo-grid__image" src="./images/photo-grid-baikal.jpg" alt="Фото берега">
+        <img class="photo-grid__image" src="./images/photo-grid-elbrus.jpg" alt="Фото горы Эльбрус">
+        <img class="photo-grid__image" src="./images/photo-grid-kondratiev.jpg" alt="Фото Пешеходный знак">
+        <img class="photo-grid__image" src="./images/photo-grid-kamchatka-1.jpg" alt="Фото Камчатка">
+        <img class="photo-grid__image" src="./images/photo-grid-kamchatka-2.jpg" alt="Фото Камчатка горы">
+        <img class="photo-grid__image" src="./images/photo-grid-baikal-2.jpg" alt="Фото скалы Байкал">
+        <img class="photo-grid__image" src="./images/photo-grid-ergaki.jpg" alt="Фото туман в горах">  
       </section>
       <section class="places">
         <article class="place">
@@ -171,19 +145,23 @@
         </article>
       </section>
       <section class="cover">
-        <a class="cover__background" href="https://stampsy.com/na-elektrichkakh-do-baikala" target="_blank">
+        <div class="cover__background"></div>
+        <a class="cover__link" href="https://stampsy.com/na-elektrichkakh-do-baikala" target="_blank">
           <h2 class="cover__title">До Байкала «на собаках»</h2>
           <p class="cover__subtitle">По мотивам учебной темы о Транссибе — путешествие от столицы до Байкала на электричках.</p>
-        </a>  
+          <div class="cover__overlay"></div>
+        </a>
       </section>
       <section class="footer">
-        <ul class="footer__list">
-          <li class="footer__list-item"><a class="footer__link" href="https://yandex.ru/maps" target="_blank">Карты</a></li>
-          <li class="footer__list-item"><a class="footer__link" href="https://yandex.ru/pogoda" target="_blank">Погода</a></li>
-          <li class="footer__list-item"><a class="footer__link" href="https://rasp.yandex.ru" target="_blank">Расписание</a></li>
-          <li class="footer__list-item"><a class="footer__link" href="https://calendar.yandex.ru" target="_blank">Календарь</a></li>
-          <li class="footer__list-item"><a class="footer__link" href="https://travel.yandex.ru" target="_blank">Путешествия</a></li>
-        </ul>
+        <nav class="footer__menu">
+          <ul class="footer__list">
+            <li class="footer__list-item"><a class="footer__link" href="https://yandex.ru/maps" target="_blank">Карты</a></li>
+            <li class="footer__list-item"><a class="footer__link" href="https://yandex.ru/pogoda" target="_blank">Погода</a></li>
+            <li class="footer__list-item"><a class="footer__link" href="https://rasp.yandex.ru" target="_blank">Расписание</a></li>
+            <li class="footer__list-item"><a class="footer__link" href="https://calendar.yandex.ru" target="_blank">Календарь</a></li>
+            <li class="footer__list-item"><a class="footer__link" href="https://travel.yandex.ru" target="_blank">Путешествия</a></li>
+          </ul>
+        </nav>
         <p class="footer__copyright">© 2020. Клевцов Альберт</p>
       </section>
     </main>
